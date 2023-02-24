@@ -111,7 +111,7 @@ public:
   bool mend;
   int    mnowline;
   int    mnowcolumn;
-  bool Isnum( char com ) { // ¼Æ¦r 
+  bool Isnum( char com ) { // æ•¸å­— 
     if ( ( int ) com >= 48 && ( int ) com <= 57 )
       return true;
     return false;  
@@ -123,7 +123,7 @@ public:
     return false;
   } // Iswhitesp()
 
-  bool Ischar( char com ) { // ­^¤å 
+  bool Ischar( char com ) { // è‹±æ–‡ 
     if ( ( ( int ) com >= 65 && ( int ) com <= 90 ) || (  ( int ) com >= 97 && ( int ) com <= 122 ) ) {
       return true;
     } // if
@@ -230,7 +230,7 @@ public:
         else if (  mnowchar != '\n'  )
           mnowtoken =  mnowtoken+ '\\' + mnowchar; 
         /*
-        else if( mnowchar == '0' ) // ¦³¥i¯à·|¦³¿ù 
+        else if( mnowchar == '0' ) // æœ‰å¯èƒ½æœƒæœ‰éŒ¯ 
         mnowtoken += '\0'; 
         */
       } // if
@@ -320,7 +320,7 @@ public:
 
     // cout << "test token : " << mnowtoken << "\t\t" << mnowtype << endl;	
     if ( mnowtoken == ";"  ) {
-      while (  cin.peek() != EOF && cin.peek() != '\n'  ) // §âµù¸ÑÅª±¼ 
+      while (  cin.peek() != EOF && cin.peek() != '\n'  ) // æŠŠè¨»è§£è®€æ‰ 
         Getchar();
       mnowchar = '\0';
       Gettoken();
