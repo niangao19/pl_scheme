@@ -1,4 +1,4 @@
-# plsheme
+# plscheme
 使用C++完成的scheme interpreter
 ### 使用方法
 編譯 ```make ```
