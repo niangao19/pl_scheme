@@ -2,7 +2,6 @@ CC = g++
 CFLAGS	= -Wall -g -I./include
 SRCDIR = src/
 OBJDIR = obj/
-OBJS = $(OBJDIR)pl1.o $(OBJDIR)input_test.o $(OBJDIR)pl3.o $(OBJDIR)scheme.o
 all: pl1.out pl.out
 
 $(OBJDIR)%.o: $(SRCDIR)%.cpp
