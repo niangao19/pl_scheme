@@ -1,6 +1,6 @@
 # include <iostream> // cin cout endl
 using namespace std;
-#include "pl3.h"
+#include "../include/pl3.h"
 
 int main() {
   Project3 test;

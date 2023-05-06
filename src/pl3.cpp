@@ -6,7 +6,7 @@
 # include <iomanip> // fix
 # include <exception> // try catch
 # include <sstream> // itos
-# include "pl3.h"
+# include "../include/pl3.h"
 using namespace std;
 
  // =========================== define operator 
