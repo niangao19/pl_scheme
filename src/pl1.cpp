@@ -6,7 +6,7 @@
 # include <iomanip> // fix
 # include <exception> // try catch
 # include <sstream> // itos
-# include "../include/pl1.h"
+# include "pl1.h"
 using namespace std;
 
 
