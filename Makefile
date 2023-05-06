@@ -1,5 +1,5 @@
 CC = g++
-CFLAGS	= -Wall -g -I./include
+CFLAGS	= -Wall -g -I./include -std=c++11
 SRCDIR = src/
 OBJDIR = obj/
 all: pl1.out pl.out
