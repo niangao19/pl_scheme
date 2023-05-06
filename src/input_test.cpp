@@ -1,4 +1,4 @@
-# include "../include/pl1.h"
+# include "pl1.h"
 # include <iostream> // cin cout endl
 using namespace std;
 
