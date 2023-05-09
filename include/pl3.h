@@ -181,7 +181,6 @@ public:
 
   void Printexp( Expptr temp, bool error );
 
-
   Expptr Arith(  Expptr temp, int op ) ;
   
   Expptr SAdd( Expptr temp );
@@ -219,9 +218,7 @@ public:
   Expptr Cadr(  Expptr temp, int op );
   
   Expptr If(  Expptr temp, Expptr head ) ;
-  
 
-  
   Expptr Cond2(  Expptr temp, bool &tf, bool least  );
   
 
