@@ -1,5 +1,7 @@
 #include <gtest/gtest.h>
 #include <iostream>
+#include <fstream>
+#include <string>
 
 int readUserInput()
 {
@@ -32,11 +34,48 @@ TEST(cin_test, Basic)
 
     ASSERT_EQ(readUserInput(), 2);
     close(fildes[0]);
+    testing::internal::CaptureStdout();
+    std::cout << "My test";
+    std::string output = testing::internal::GetCapturedStdout();
+    ASSERT_EQ(output, "My test");
 }
+
+void processInput() {
+    std::string input;
+    std::cin >> input;
+    std::cout << input << std::endl;
+    // 處理輸入...
+}
+
+TEST(cin_test, file)
+{
+    std::ifstream inputFile("input.txt");
+
+    std::streambuf* originalCinBuf = std::cin.rdbuf(inputFile.rdbuf());
+
+
+    processInput();
+
+
+    std::cin.rdbuf(originalCinBuf);
+
+ 
+    inputFile.close();
+}
+
+TEST(cout_test, Basic)
+{
+    std::cout << "My test output" << std::endl;
+    testing::internal::CaptureStdout();
+    std::cout << "My test";
+    std::string output = testing::internal::GetCapturedStdout();
+    std::cout << "My test output"<< std::endl;
+    ASSERT_EQ(output, "My test");
+}
+
 
 int main(int argc, char **argv) {
     ::testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
 }
-
 
