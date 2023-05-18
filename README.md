@@ -5,6 +5,8 @@
 
 只有讀入功能：```./pl1.out ```
 
+test file : ```make test```
+
 執行scheme interpreter:```./pl ```
 ### 目前完成的功能
 - function call 
