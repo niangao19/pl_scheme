@@ -17,3 +17,8 @@
 - 寫test code去測試有沒有沒發現的bug
  
 ### test
+- 使用googletest來當unittest之工具
+#### unittest target
+[] 運算元
+[] function call
+[] lambda
