@@ -12,6 +12,7 @@ TEST(IsnumTest, Digits) {
     }
 }
 
+
 TEST(IsnumTest, NonDigits) {
     for (char c = 'a' ; c <= 'z' ; c++) {
         EXPECT_FALSE(pl.Isnum(c));
