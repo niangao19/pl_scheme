@@ -14,8 +14,7 @@ pl.out: $(OBJDIR)pl3.o $(OBJDIR)scheme.o
 test: testpl.out test.o testg.o
 
 testpl.out:
-	$(CC) pl3.cpp  $(CFLAGS) -o $(OBJDIR)pltest.o
-	$(CC) $(OBJDIR)pltest.o  testpl.cpp  $(CFLAGS) -lgtest -lpthread  -o testpl.out
+	$(CC) $(SRCDIR)pl3.cpp   test/testpl.cpp  -I./include -std=c++11 -lgtest -lpthread  -o testpl.out
 test.o:
 	g++ test/input_gtest.cpp -lgtest -lpthread -o test.o
 testg.o:
