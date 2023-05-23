@@ -25,7 +25,8 @@ TEST(IsnumTest, NonDigits) {
 TEST(IswhitespTest, Whitespace) {
     // test Whitespace
     char testcase[] = {' ', '\t', '\n', '\0'} ;
-    for (int i = 0 ; i < size(testcase) ; i++) {
+    int size = sizeof(testcase)/sizeof(testcase[0]);
+    for (int i = 0 ; i < size ; i++) {
         EXPECT_TRUE(pl.Iswhitesp(testcase[i])) ;
     }
 
@@ -52,14 +53,16 @@ TEST(IscharTest, NonChar) {
 
 TEST(IsspreadTest, SpreadChars) {
     char testcase[] = {' ', '\t', '\n', '\0', '\'', '\"', ';', '(', ')'} ;
-    for (int i = 0 ; i < size(testcase) ; i++) {
+    int size = sizeof(testcase)/sizeof(testcase[0]);
+    for (int i = 0 ; i < size ; i++) {
         EXPECT_TRUE(pl.Isspread(testcase[i])) ;
     }
 }
 
 TEST(IsspreadTest, NonSpreadChars) {
     char testcase[] = {'a', 'Z', '1', '!', '-'} ;
-    for (int i = 0 ; i < size(testcase) ; i++) {
+    int size = sizeof(testcase)/sizeof(testcase[0]);
+    for (int i = 0 ; i < size ; i++) {
         EXPECT_FALSE(pl.Isspread(testcase[i])) ;
     }
 }
@@ -68,7 +71,8 @@ TEST(IsBasicTest, BasicOperators) {
     // test BasicOperators
     string testcase[] = { "+", "-", "*", "/", "not", "and", "or", ">", ">=",
     "<", "<=", "=", "string-append", "string>?", "string<?", "string=?" } ;
-    for (int i = 0 ; i < size(testcase) ; i++) {
+    int size = sizeof(testcase)/sizeof(testcase[0]);
+    for (int i = 0 ; i < size ; i++) {
         EXPECT_TRUE(pl.IsBasic(testcase[i])) ;
     }
 
@@ -81,7 +85,8 @@ TEST(IsBasicTest, BasicOperators) {
 TEST(IsPrimitiveTest, Primitive) {
     string testcase[] = { "atom?", "pair?", "list?", "null?", "integer?", 
     "real?", "number?", "string?", "boolean?", "symbol?" };
-    for (int i = 0 ; i < size(testcase) ; i++) {
+    int size = sizeof(testcase)/sizeof(testcase[0]);
+    for (int i = 0 ; i < size ; i++) {
         EXPECT_TRUE(pl.IsPrimitive(testcase[i])) ;
     }
 }
