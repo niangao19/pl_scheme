@@ -1,0 +1,7 @@
+( #<procedure +>
+  1
+  2
+  3
+)
+( #<procedure exit>
+)
