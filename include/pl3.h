@@ -129,17 +129,19 @@ public:
 };
 
 class Project3 {
-  int    mtokencolumn;
-  int    mtokenline;
-  std::string mlinename;
-  std::string mnowtoken;
-  int    mnowtype;
-  char   mnowchar ; // doesn't process
+
+
   std::vector<Symbal>    msymbal; // global varible
   std::vector< Funsym >  mcstack; // location varible
   std::vector<Function>  mheap; // program counter
   
 public:
+  std::string mlinename;
+  std::string mnowtoken;
+  int    mnowtype;
+  char   mnowchar ; // doesn't process
+  int    mtokencolumn;
+  int    mtokenline;
   bool mend;
   int    mnowline;
   int    mnowcolumn;
