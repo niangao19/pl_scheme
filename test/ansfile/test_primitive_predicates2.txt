@@ -1,0 +1,6 @@
+(null? #f)
+(null? '(3 . 4))
+(integer? 3)
+(integer? 3.4)
+(integer? -.4)
+(exit)

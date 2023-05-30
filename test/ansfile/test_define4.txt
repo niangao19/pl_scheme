@@ -1,0 +1,9 @@
+(f 3 b)
+(cons 3 b)
+(define a 5)
+(cons 3 a)
+(a 3 a)
+(define a '(3 4))
+(cons 5 a)
+a
+(exit)

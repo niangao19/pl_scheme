@@ -1,0 +1,6 @@
+(boolean? '(3 . 4))
+(symbol? 'abc)
+(symbol? 3)
+(number? America)
+(define America '(U. S. A.))
+(exit)

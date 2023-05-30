@@ -1,0 +1,7 @@
+(car WarAndPeace!)
+(cdr '((3 4) 5)  )  ; the "right part" of a dotted pair
+(cdr '((3 4) "Happy New Year!" . 6)  )
+(cdr '((3 4) . "Merry Christmas!")  )
+(define a '(3 4))
+(cdr a)
+(exit)

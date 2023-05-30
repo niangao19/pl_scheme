@@ -1,0 +1,62 @@
+   (clean-environment)
+   
+   ( define a 2 )
+   
+   ( define f ( lambda (x) (+ x x c) ; the binding of 'f' is defined
+              )                      ; to be the internal representation
+   )                                 ; of a function
+   
+   f
+      
+   (f 1 2 3)
+   
+   (f a)
+   
+   (f b)
+   
+   ( define c 10 )
+   
+   (f a)
+  
+   ( define ( g x ) (h x x) )
+   
+   g
+   
+   (g 3)
+   
+   ( define ( k x ) (h z z) )
+   
+   (k w)
+   
+   (k c)
+   
+   (define (h x y) (+ x 20 a))
+   
+   (g c)
+   
+   ( define (h x y) )
+   
+   ( define x 10 20 )
+
+   ( define x 300 )   ; 'x' is a "global"
+   
+   (g c)              ; global x != parameter x
+
+   (define cadr (lambda (x) (car (cdr x))))
+   
+   cadr
+   
+   (cadr '(1 2 3 4))
+   
+   (define (cadr x) ( (lambda (x) (car (cdr x))) 
+                      x
+                    )
+   )
+   
+   (cadr '(1 2 3 4))
+   
+   cadr
+   
+   cons
+
+   (exit)
