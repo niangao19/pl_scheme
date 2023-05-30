@@ -1,0 +1,6 @@
+(define a 5)
+(string>? 15 "hi")
+(+ 15 "hi")
+(string>? "hi" "there" a)
+(string>? "hi" "there" about)
+(exit)

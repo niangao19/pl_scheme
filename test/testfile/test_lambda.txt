@@ -1,0 +1,44 @@
+    (clean-environment)
+   
+   ( lambda )
+   
+   ( lambda x )   
+   
+   ( lambda x y z )
+   
+   ( lambda (x) y z       ; the evaluation of a lambda expression
+                            ; produces an internal representation of a 
+   )                      ; function
+   
+   ( lambda (x) )
+   
+   ( lambda () y )
+   
+   ( lambda (5) y )
+   
+   ( lambda () 5 )
+   
+   ( lambda () () )
+   
+   ( lambda () )
+   
+   ( lambda () (+ c 5)
+   )
+  
+   ( ( lambda () (+ c 5)  ; first, the internal representation of a function
+     )                    ; is produced ; this internal representation
+                          ; is "the evaluated result of the first argument"
+                          ; once the binding of the first argument (of
+                          ; the top-level list) is obtained and found
+                          ; to be a function, that function is applied ;
+   )
+   
+   ( ( lambda () (+ 5 5) (+ 5 6) 
+     )
+   )
+   
+   ( ( lambda () (+ 5 5) (+ c 6)
+     )
+     8
+   )
+   (exit)

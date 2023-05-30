@@ -1,0 +1,13 @@
+(define d 20)
+d
+(if #t 3 5)
+(begin
+   3  4  5)
+(begin
+   3 4 d)
+(begin
+   (+ 3 5)
+   (- 4 5)
+   (* d d)
+  )
+( exit )

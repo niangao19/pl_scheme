@@ -1,0 +1,6 @@
+(string? "Hi")
+(string? +3.4)
+(boolean? #t)
+(boolean? ())
+(boolean? #f)
+(exit)
