@@ -1,0 +1,13 @@
+ERROR (unbound symbol) : CONS
+ERROR (incorrect number of arguments) : cons
+ERROR (attempt to apply non-function) : 3
+( 3
+  4
+  5
+)
+( 3
+  ( 4
+    5
+  )
+)
+ERROR (attempt to apply non-function) : 4321
