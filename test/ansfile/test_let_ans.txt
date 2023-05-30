@@ -1,0 +1,75 @@
+environment cleaned
+( 3
+  2
+  3
+)
+ERROR (unbound symbol) : x
+ERROR (LET format) : ( let
+  ( car
+    ( quote
+      ( 1
+        2
+        3
+      )
+    )
+  )
+)
+ERROR (LET format) : ( let
+  ( ( x
+      3
+      4
+    )
+  )
+  5
+)
+5
+ERROR (LET format) : ( let
+  ( ( ( car
+        ( quote
+          ( x
+            y
+            z
+          )
+        )
+      )
+      3
+    )
+  )
+  5
+)
+ERROR (LET format) : ( let
+  nil
+)
+5
+ERROR (LET format) : ( let
+  ( ( ( car
+        ( quote
+          ( x
+            y
+            z
+          )
+        )
+      )
+      5
+    )
+  )
+)
+ERROR (incorrect number of arguments) : cons
+ERROR (LET format) : ( let
+  ( ( x
+      ( cons
+        5
+      )
+    )
+  )
+)
+ERROR (attempt to apply non-function) : 1
+ERROR (LET format) : ( let
+  ( ( x
+      ( 1
+        2
+        3
+      )
+    )
+  )
+)

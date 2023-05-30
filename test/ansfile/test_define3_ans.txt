@@ -1,0 +1,16 @@
+there defined
+hello defined
+( "CYCU ICE (1 2 3)"
+  .
+  "Number One!"
+)
+hello defined
+( 3
+  4
+)
+( ( 1
+    2
+    3
+  )
+  4
+)

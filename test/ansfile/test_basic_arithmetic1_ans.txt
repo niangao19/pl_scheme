@@ -1,0 +1,8 @@
+10
+-4
+-1.500
+12
+ERROR (* with incorrect argument type) : "Hi"
+ERROR (incorrect number of arguments) : *
+60
+120

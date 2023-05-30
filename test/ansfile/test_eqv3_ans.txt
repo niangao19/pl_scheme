@@ -1,0 +1,6 @@
+a defined
+nil
+nil
+#t
+#t
+#t
