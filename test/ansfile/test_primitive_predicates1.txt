@@ -1,6 +1,0 @@
-(pair? 3)      ; Other Lisps do not have PAIR; they have ATOM
-(pair? '(3 4))
-(pair? '(3 . 4))
-(pair? "Hello, there!")
-(null? ())     ; is it the empty list?
-(exit)

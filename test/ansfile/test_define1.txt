@@ -1,6 +1,0 @@
-abc
-(define a 5)
-a
-(define x '((3 4) 5)) 
-x
-(exit)

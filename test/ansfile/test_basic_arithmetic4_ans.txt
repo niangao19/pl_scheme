@@ -1,7 +1,0 @@
-a defined
-nil
-nil
-#t
-nil
-nil
-15

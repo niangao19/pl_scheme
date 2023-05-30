@@ -1,5 +1,0 @@
-(if (> 3 2) 'good 'bad)
-(define a 5)
-(if a 'good 'bad)
-(if (not a) 'good 'bad)
-(exit)

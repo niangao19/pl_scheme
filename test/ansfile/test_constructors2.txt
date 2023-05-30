@@ -1,8 +1,0 @@
-(CONS hello there)
-(cons 1 2 3)
-(3 4 5)
-'(3 4 5)
-(quote (3 (4 5)))
-(cons 3 
-        (4321 5))
-(exit)

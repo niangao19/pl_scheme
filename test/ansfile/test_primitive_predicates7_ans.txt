@@ -1,2 +1,0 @@
-Europe defined
-ERROR (incorrect number of arguments) : pair?

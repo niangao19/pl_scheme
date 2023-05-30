@@ -1,6 +1,0 @@
-a defined
-b defined
-#t
-c defined
-nil
-#t

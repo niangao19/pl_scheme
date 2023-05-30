@@ -1,3 +1,0 @@
-(define Europe 'hi)
-(pair? America Europe)
-(exit)

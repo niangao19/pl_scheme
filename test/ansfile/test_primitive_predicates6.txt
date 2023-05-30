@@ -1,8 +1,0 @@
-(define America '(U. S. A.))
-(symbol? America)
-(pair? America)
-(pair? American)
-(boolean? America)
-(pair? Europe 4)
-(pair? America Europe)
-(exit)

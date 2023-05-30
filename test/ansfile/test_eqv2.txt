@@ -1,7 +1,0 @@
-( define a '(3 4))
-(define b a)
-(eqv? a b)
-(define c '(3 4))
-(eqv? a c)
-(equal? a c)
-(exit)

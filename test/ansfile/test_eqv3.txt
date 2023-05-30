@@ -1,7 +1,0 @@
-( define a '(3 4))
-(eqv? '(3 4) '(3 4))
-(eqv? "Hi" "Hi")
-(equal? a a)
-(equal? '(3 4) '(3 4))
-(equal? "Hi" "Hi")
-(exit)

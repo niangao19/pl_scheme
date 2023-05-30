@@ -1,4 +1,0 @@
-(not (pair? 3))
-(and (pair? 3) (null? ())  )
-(or (pair? 3) (null? ())  )
-(exit)

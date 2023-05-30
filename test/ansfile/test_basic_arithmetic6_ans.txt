@@ -1,5 +1,0 @@
-a defined
-ERROR (string>? with incorrect argument type) : 15
-ERROR (+ with incorrect argument type) : "hi"
-ERROR (string>? with incorrect argument type) : 5
-ERROR (unbound symbol) : about

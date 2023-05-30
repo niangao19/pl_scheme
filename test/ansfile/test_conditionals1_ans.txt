@@ -1,4 +1,0 @@
-good
-a defined
-good
-bad

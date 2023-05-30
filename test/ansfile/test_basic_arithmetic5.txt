@@ -1,6 +1,0 @@
-(string-append "Hello," " there!")
-(string-append "Hello," " there!" " Wait!")
-(string>? "az" "aw")
-(string>? "az" "aw" "ax")
-(string>? "az" "aw" "atuv")
-(exit)
