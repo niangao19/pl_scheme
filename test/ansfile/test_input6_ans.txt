@@ -1,0 +1,40 @@
+( Hi
+  there
+  !
+  How
+  are
+  you
+  ?
+)
+( Hi
+  there!
+  How
+  are
+  you?
+)
+( Hi!
+  ( How
+    about
+    using
+    Lisp
+    ( instead
+      of
+      .
+      C?
+    )
+  )
+)
+( Hi
+  there
+)
+( How
+  are
+  you
+)
+( Hi
+  there
+  How
+  is
+  it
+  going?
+)

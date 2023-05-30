@@ -1,0 +1,26 @@
+( #t
+  nil
+  1
+  2
+  3
+)
+ERROR (unexpected token) : ')' expected when token at Line 1 Column 11 is >>.<<
+( ( 1
+    2
+    3
+  )
+  4
+  5
+)
+( ( 1
+    2
+    3
+  )
+  4
+  5
+)
+( 12.500
+  4
+  .
+  5
+)
