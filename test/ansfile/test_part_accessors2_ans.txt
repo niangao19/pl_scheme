@@ -1,0 +1,11 @@
+ERROR (unbound symbol) : WarAndPeace!
+( 5
+)
+( "Happy New Year!"
+  .
+  6
+)
+"Merry Christmas!"
+a defined
+( 4
+)

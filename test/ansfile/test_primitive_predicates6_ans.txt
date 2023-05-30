@@ -1,0 +1,7 @@
+America defined
+nil
+#t
+ERROR (unbound symbol) : American
+nil
+ERROR (incorrect number of arguments) : pair?
+ERROR (incorrect number of arguments) : pair?

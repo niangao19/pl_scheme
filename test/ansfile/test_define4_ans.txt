@@ -1,0 +1,16 @@
+ERROR (unbound symbol) : f
+ERROR (unbound symbol) : b
+a defined
+( 3
+  .
+  5
+)
+ERROR (attempt to apply non-function) : 5
+a defined
+( 5
+  3
+  4
+)
+( 3
+  4
+)
