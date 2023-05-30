@@ -545,6 +545,474 @@ TEST(define, test1) {
     ASSERT_EQ(test_outcome, ans_outcome);
 }
 
+TEST(define, test2) {
+    Project3 pl;
+    pl.mend = false;
+    pl.mnowline = 1;
+    pl.mnowcolumn = 0;
+    ifstream inputFile("./test/testfile/test_define2.txt");
+    streambuf* originalCinBuf = cin.rdbuf(inputFile.rdbuf());
+    string test_outcome = "";
+    
+    while( cin.peek() != EOF  ) {
+        testing::internal::CaptureStdout();
+        // testinput( pl );
+        pl.Startexp();
+        string output = testing::internal::GetCapturedStdout();
+        test_outcome += output;
+    } // while
+
+    // cout << "test : " << test_outcome << endl << "end\n";
+    cin.rdbuf(originalCinBuf);
+    inputFile.close();
+
+    // Open file
+    ifstream ansFile;
+    string line;
+    string ans_outcome = "";
+    ansFile.open("./test/ansfile/test_define2_ans.txt");
+
+    // Print file content
+    while (getline(ansFile, line)) {
+        ans_outcome += line + "\n";
+        // cout  << line << endl;
+    } // while
+
+    // cout << "ans"<< ans_outcome << endl;
+    // Close file
+    ansFile.close();
+    ASSERT_EQ(test_outcome, ans_outcome);
+}
+
+TEST(define, test3) {
+    Project3 pl;
+    pl.mend = false;
+    pl.mnowline = 1;
+    pl.mnowcolumn = 0;
+    ifstream inputFile("./test/testfile/test_define3.txt");
+    streambuf* originalCinBuf = cin.rdbuf(inputFile.rdbuf());
+    string test_outcome = "";
+    
+    while( cin.peek() != EOF  ) {
+        testing::internal::CaptureStdout();
+        // testinput( pl );
+        pl.Startexp();
+        string output = testing::internal::GetCapturedStdout();
+        test_outcome += output;
+    } // while
+
+    // cout << "test : " << test_outcome << endl << "end\n";
+    cin.rdbuf(originalCinBuf);
+    inputFile.close();
+
+    // Open file
+    ifstream ansFile;
+    string line;
+    string ans_outcome = "";
+    ansFile.open("./test/ansfile/test_define3_ans.txt");
+
+    // Print file content
+    while (getline(ansFile, line)) {
+        ans_outcome += line + "\n";
+        // cout  << line << endl;
+    } // while
+
+    // cout << "ans"<< ans_outcome << endl;
+    // Close file
+    ansFile.close();
+    ASSERT_EQ(test_outcome, ans_outcome);
+}
+
+TEST(define, nodefine) {
+    Project3 pl;
+    pl.mend = false;
+    pl.mnowline = 1;
+    pl.mnowcolumn = 0;
+    ifstream inputFile("./test/testfile/test_define4.txt");
+    streambuf* originalCinBuf = cin.rdbuf(inputFile.rdbuf());
+    string test_outcome = "";
+    
+    while( cin.peek() != EOF  ) {
+        testing::internal::CaptureStdout();
+        // testinput( pl );
+        pl.Startexp();
+        string output = testing::internal::GetCapturedStdout();
+        test_outcome += output;
+    } // while
+
+    // cout << "test : " << test_outcome << endl << "end\n";
+    cin.rdbuf(originalCinBuf);
+    inputFile.close();
+
+    // Open file
+    ifstream ansFile;
+    string line;
+    string ans_outcome = "";
+    ansFile.open("./test/ansfile/test_define4_ans.txt");
+
+    // Print file content
+    while (getline(ansFile, line)) {
+        ans_outcome += line + "\n";
+        // cout  << line << endl;
+    } // while
+
+    // cout << "ans"<< ans_outcome << endl;
+    // Close file
+    ansFile.close();
+    ASSERT_EQ(test_outcome, ans_outcome);
+}
+
+TEST(part_accessors, test1) {
+    Project3 pl;
+    pl.mend = false;
+    pl.mnowline = 1;
+    pl.mnowcolumn = 0;
+    ifstream inputFile("./test/testfile/test_part_accessors1.txt");
+    streambuf* originalCinBuf = cin.rdbuf(inputFile.rdbuf());
+    string test_outcome = "";
+    
+    while( cin.peek() != EOF  ) {
+        testing::internal::CaptureStdout();
+        // testinput( pl );
+        pl.Startexp();
+        string output = testing::internal::GetCapturedStdout();
+        test_outcome += output;
+    } // while
+
+    // cout << "test : " << test_outcome << endl << "end\n";
+    cin.rdbuf(originalCinBuf);
+    inputFile.close();
+
+    // Open file
+    ifstream ansFile;
+    string line;
+    string ans_outcome = "";
+    ansFile.open("./test/ansfile/test_part_accessors1_ans.txt");
+
+    // Print file content
+    while (getline(ansFile, line)) {
+        ans_outcome += line + "\n";
+        // cout  << line << endl;
+    } // while
+
+    // cout << "ans"<< ans_outcome << endl;
+    // Close file
+    ansFile.close();
+    ASSERT_EQ(test_outcome, ans_outcome);
+}
+
+TEST(part_accessors, test2) {
+    Project3 pl;
+    pl.mend = false;
+    pl.mnowline = 1;
+    pl.mnowcolumn = 0;
+    ifstream inputFile("./test/testfile/test_part_accessors2.txt");
+    streambuf* originalCinBuf = cin.rdbuf(inputFile.rdbuf());
+    string test_outcome = "";
+    
+    while( cin.peek() != EOF  ) {
+        testing::internal::CaptureStdout();
+        // testinput( pl );
+        pl.Startexp();
+        string output = testing::internal::GetCapturedStdout();
+        test_outcome += output;
+    } // while
+
+    // cout << "test : " << test_outcome << endl << "end\n";
+    cin.rdbuf(originalCinBuf);
+    inputFile.close();
+
+    // Open file
+    ifstream ansFile;
+    string line;
+    string ans_outcome = "";
+    ansFile.open("./test/ansfile/test_part_accessors2_ans.txt");
+
+    // Print file content
+    while (getline(ansFile, line)) {
+        ans_outcome += line + "\n";
+        // cout  << line << endl;
+    } // while
+
+    // cout << "ans"<< ans_outcome << endl;
+    // Close file
+    ansFile.close();
+    ASSERT_EQ(test_outcome, ans_outcome);
+}
+
+TEST(part_accessors, test3) {
+    Project3 pl;
+    pl.mend = false;
+    pl.mnowline = 1;
+    pl.mnowcolumn = 0;
+    ifstream inputFile("./test/testfile/test_part_accessors3.txt");
+    streambuf* originalCinBuf = cin.rdbuf(inputFile.rdbuf());
+    string test_outcome = "";
+    
+    while( cin.peek() != EOF  ) {
+        testing::internal::CaptureStdout();
+        // testinput( pl );
+        pl.Startexp();
+        string output = testing::internal::GetCapturedStdout();
+        test_outcome += output;
+    } // while
+
+    // cout << "test : " << test_outcome << endl << "end\n";
+    cin.rdbuf(originalCinBuf);
+    inputFile.close();
+
+    // Open file
+    ifstream ansFile;
+    string line;
+    string ans_outcome = "";
+    ansFile.open("./test/ansfile/test_part_accessors3_ans.txt");
+
+    // Print file content
+    while (getline(ansFile, line)) {
+        ans_outcome += line + "\n";
+        // cout  << line << endl;
+    } // while
+
+    // cout << "ans"<< ans_outcome << endl;
+    // Close file
+    ansFile.close();
+    ASSERT_EQ(test_outcome, ans_outcome);
+}
+
+TEST(Conditionals, test1) {
+    Project3 pl;
+    pl.mend = false;
+    pl.mnowline = 1;
+    pl.mnowcolumn = 0;
+    ifstream inputFile("./test/testfile/test_conditionals1.txt");
+    streambuf* originalCinBuf = cin.rdbuf(inputFile.rdbuf());
+    string test_outcome = "";
+    
+    while( cin.peek() != EOF  ) {
+        testing::internal::CaptureStdout();
+        // testinput( pl );
+        pl.Startexp();
+        string output = testing::internal::GetCapturedStdout();
+        test_outcome += output;
+    } // while
+
+    // cout << "test : " << test_outcome << endl << "end\n";
+    cin.rdbuf(originalCinBuf);
+    inputFile.close();
+
+    // Open file
+    ifstream ansFile;
+    string line;
+    string ans_outcome = "";
+    ansFile.open("./test/ansfile/test_conditionals1_ans.txt");
+
+    // Print file content
+    while (getline(ansFile, line)) {
+        ans_outcome += line + "\n";
+        // cout  << line << endl;
+    } // while
+
+    // cout << "ans"<< ans_outcome << endl;
+    // Close file
+    ansFile.close();
+    ASSERT_EQ(test_outcome, ans_outcome);
+}
+
+TEST(Conditionals, test2) {
+    Project3 pl;
+    pl.mend = false;
+    pl.mnowline = 1;
+    pl.mnowcolumn = 0;
+    ifstream inputFile("./test/testfile/test_conditionals2.txt");
+    streambuf* originalCinBuf = cin.rdbuf(inputFile.rdbuf());
+    string test_outcome = "";
+    
+    while( cin.peek() != EOF  ) {
+        testing::internal::CaptureStdout();
+        // testinput( pl );
+        pl.Startexp();
+        string output = testing::internal::GetCapturedStdout();
+        test_outcome += output;
+    } // while
+
+    // cout << "test : " << test_outcome << endl << "end\n";
+    cin.rdbuf(originalCinBuf);
+    inputFile.close();
+
+    // Open file
+    ifstream ansFile;
+    string line;
+    string ans_outcome = "";
+    ansFile.open("./test/ansfile/test_conditionals2_ans.txt");
+
+    // Print file content
+    while (getline(ansFile, line)) {
+        ans_outcome += line + "\n";
+        // cout  << line << endl;
+    } // while
+
+    // cout << "ans"<< ans_outcome << endl;
+    // Close file
+    ansFile.close();
+    ASSERT_EQ(test_outcome, ans_outcome);
+}
+
+TEST(Conditionals, test3) {
+    Project3 pl;
+    pl.mend = false;
+    pl.mnowline = 1;
+    pl.mnowcolumn = 0;
+    ifstream inputFile("./test/testfile/test_conditionals3.txt");
+    streambuf* originalCinBuf = cin.rdbuf(inputFile.rdbuf());
+    string test_outcome = "";
+    
+    while( cin.peek() != EOF  ) {
+        testing::internal::CaptureStdout();
+        // testinput( pl );
+        pl.Startexp();
+        string output = testing::internal::GetCapturedStdout();
+        test_outcome += output;
+    } // while
+
+    // cout << "test : " << test_outcome << endl << "end\n";
+    cin.rdbuf(originalCinBuf);
+    inputFile.close();
+
+    // Open file
+    ifstream ansFile;
+    string line;
+    string ans_outcome = "";
+    ansFile.open("./test/ansfile/test_conditionals3_ans.txt");
+
+    // Print file content
+    while (getline(ansFile, line)) {
+        ans_outcome += line + "\n";
+        // cout  << line << endl;
+    } // while
+
+    // cout << "ans"<< ans_outcome << endl;
+    // Close file
+    ansFile.close();
+    ASSERT_EQ(test_outcome, ans_outcome);
+}
+
+TEST(functional_composition, test1) {
+    Project3 pl;
+    pl.mend = false;
+    pl.mnowline = 1;
+    pl.mnowcolumn = 0;
+    ifstream inputFile("./test/testfile/test_functional_composition1.txt");
+    streambuf* originalCinBuf = cin.rdbuf(inputFile.rdbuf());
+    string test_outcome = "";
+    
+    while( cin.peek() != EOF  ) {
+        testing::internal::CaptureStdout();
+        // testinput( pl );
+        pl.Startexp();
+        string output = testing::internal::GetCapturedStdout();
+        test_outcome += output;
+    } // while
+
+    // cout << "test : " << test_outcome << endl << "end\n";
+    cin.rdbuf(originalCinBuf);
+    inputFile.close();
+
+    // Open file
+    ifstream ansFile;
+    string line;
+    string ans_outcome = "";
+    ansFile.open("./test/ansfile/test_functional_composition1_ans.txt");
+
+    // Print file content
+    while (getline(ansFile, line)) {
+        ans_outcome += line + "\n";
+        // cout  << line << endl;
+    } // while
+
+    // cout << "ans"<< ans_outcome << endl;
+    // Close file
+    ansFile.close();
+    ASSERT_EQ(test_outcome, ans_outcome);
+}
+
+TEST(functional_composition, test2) {
+    Project3 pl;
+    pl.mend = false;
+    pl.mnowline = 1;
+    pl.mnowcolumn = 0;
+    ifstream inputFile("./test/testfile/test_functional_composition2.txt");
+    streambuf* originalCinBuf = cin.rdbuf(inputFile.rdbuf());
+    string test_outcome = "";
+    
+    while( cin.peek() != EOF  ) {
+        testing::internal::CaptureStdout();
+        // testinput( pl );
+        pl.Startexp();
+        string output = testing::internal::GetCapturedStdout();
+        test_outcome += output;
+    } // while
+
+    // cout << "test : " << test_outcome << endl << "end\n";
+    cin.rdbuf(originalCinBuf);
+    inputFile.close();
+
+    // Open file
+    ifstream ansFile;
+    string line;
+    string ans_outcome = "";
+    ansFile.open("./test/ansfile/test_functional_composition2_ans.txt");
+
+    // Print file content
+    while (getline(ansFile, line)) {
+        ans_outcome += line + "\n";
+        // cout  << line << endl;
+    } // while
+
+    // cout << "ans"<< ans_outcome << endl;
+    // Close file
+    ansFile.close();
+    ASSERT_EQ(test_outcome, ans_outcome);
+}
+
+TEST(functional_composition, test3) {
+    Project3 pl;
+    pl.mend = false;
+    pl.mnowline = 1;
+    pl.mnowcolumn = 0;
+    ifstream inputFile("./test/testfile/test_define.txt");
+    streambuf* originalCinBuf = cin.rdbuf(inputFile.rdbuf());
+    string test_outcome = "";
+    
+    while( cin.peek() != EOF  ) {
+        testing::internal::CaptureStdout();
+        // testinput( pl );
+        pl.Startexp();
+        string output = testing::internal::GetCapturedStdout();
+        test_outcome += output;
+    } // while
+
+    // cout << "test : " << test_outcome << endl << "end\n";
+    cin.rdbuf(originalCinBuf);
+    inputFile.close();
+
+    // Open file
+    ifstream ansFile;
+    string line;
+    string ans_outcome = "";
+    ansFile.open("./test/ansfile/test_define_ans.txt");
+
+    // Print file content
+    while (getline(ansFile, line)) {
+        ans_outcome += line + "\n";
+        // cout  << line << endl;
+    } // while
+
+    // cout << "ans"<< ans_outcome << endl;
+    // Close file
+    ansFile.close();
+    ASSERT_EQ(test_outcome, ans_outcome);
+}
+
 int main(int argc, char** argv) {
     testing::InitGoogleTest(&argc, argv); 
     return RUN_ALL_TESTS(); 
