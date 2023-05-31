@@ -1,4 +1,7 @@
 # plscheme
+
+[![gtest](https://github.com/niangao19/plsheme/actions/workflows/gtest.yml/badge.svg)](https://github.com/niangao19/plsheme/actions/workflows/gtest.yml)
+
 使用C++完成的scheme interpreter
 ### 使用方法
 編譯 ```make ```
@@ -24,5 +27,3 @@ test file : ```make test```
 - [ ] 運算元
 - [ ] function call
 - [ ] lambda
-
-[![gtest](https://github.com/niangao19/plsheme/actions/workflows/gtest.yml/badge.svg)](https://github.com/niangao19/plsheme/actions/workflows/gtest.yml)
