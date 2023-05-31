@@ -24,3 +24,5 @@ test file : ```make test```
 - [ ] 運算元
 - [ ] function call
 - [ ] lambda
+
+[![gtest](https://github.com/niangao19/plsheme/actions/workflows/gtest.yml/badge.svg)](https://github.com/niangao19/plsheme/actions/workflows/gtest.yml)
