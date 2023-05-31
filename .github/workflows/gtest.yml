@@ -25,6 +25,7 @@ jobs:
         . ./setup.sh
         make
     - name: Test gtest hello world
+      run: |
         make test
         ./testg.o
     - name: Test with unittest 
