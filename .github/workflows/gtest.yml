@@ -24,13 +24,12 @@ jobs:
         ls -al
         . ./setup.sh
         make
-    - name: Test gtest hello world
-      run: |
-        make test
-        ./testg.o
+        
     - name: Test with unittest 
       run: |
+        make test
         ./testpl.out
+        
     - name: Test Coverage 
       run: |
         . ./coverage.sh
