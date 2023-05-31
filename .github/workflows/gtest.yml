@@ -20,7 +20,7 @@ jobs:
         sudo make
         sudo cp ./lib/libgtest*.a /usr/local/lib
         cd
-        cd ./work/scheme-interpreter/scheme-interpreter
+        cd ./work/plsheme/plsheme
         ls -al
         . ./setup.sh
         make
