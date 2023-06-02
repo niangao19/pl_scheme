@@ -1,0 +1,5 @@
+( or #t #t )
+( or #f #f )
+( or #t #f )
+( or #f #t )
+( exit )
