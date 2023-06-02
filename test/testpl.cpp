@@ -1677,6 +1677,84 @@ TEST(logistic_coverage, test3) {
     ASSERT_EQ(test_outcome, ans_outcome);
 }
 
+TEST(logistic_coverage, test4) {
+    Project3 pl;
+    pl.mend = false;
+    pl.mnowline = 1;
+    pl.mnowcolumn = 0;
+    ifstream inputFile("./test/testfile/test_logistic_coverage4.txt");
+    streambuf* originalCinBuf = cin.rdbuf(inputFile.rdbuf());
+    string test_outcome = "";
+    
+    while( cin.peek() != EOF  ) {
+        testing::internal::CaptureStdout();
+        // testinput( pl );
+        pl.Startexp();
+        string output = testing::internal::GetCapturedStdout();
+        test_outcome += output;
+    } // while
+
+    // cout << "test : " << test_outcome << endl << "end\n";
+    cin.rdbuf(originalCinBuf);
+    inputFile.close();
+
+    // Open file
+    ifstream ansFile;
+    string line;
+    string ans_outcome = "";
+    ansFile.open("./test/ansfile/test_logistic_coverage4_ans.txt");
+
+    // Print file content
+    while (getline(ansFile, line)) {
+        ans_outcome += line + "\n";
+        // cout  << line << endl;
+    } // while
+
+    // cout << "ans"<< ans_outcome << endl;
+    // Close file
+    ansFile.close();
+    ASSERT_EQ(test_outcome, ans_outcome);
+}
+
+TEST(logistic_coverage, test5) {
+    Project3 pl;
+    pl.mend = false;
+    pl.mnowline = 1;
+    pl.mnowcolumn = 0;
+    ifstream inputFile("./test/testfile/test_logistic_coverage5.txt");
+    streambuf* originalCinBuf = cin.rdbuf(inputFile.rdbuf());
+    string test_outcome = "";
+    
+    while( cin.peek() != EOF  ) {
+        testing::internal::CaptureStdout();
+        // testinput( pl );
+        pl.Startexp();
+        string output = testing::internal::GetCapturedStdout();
+        test_outcome += output;
+    } // while
+
+    // cout << "test : " << test_outcome << endl << "end\n";
+    cin.rdbuf(originalCinBuf);
+    inputFile.close();
+
+    // Open file
+    ifstream ansFile;
+    string line;
+    string ans_outcome = "";
+    ansFile.open("./test/ansfile/test_logistic_coverage5_ans.txt");
+
+    // Print file content
+    while (getline(ansFile, line)) {
+        ans_outcome += line + "\n";
+        // cout  << line << endl;
+    } // while
+
+    // cout << "ans"<< ans_outcome << endl;
+    // Close file
+    ansFile.close();
+    ASSERT_EQ(test_outcome, ans_outcome);
+}
+
 int main(int argc, char** argv) {
     testing::InitGoogleTest(&argc, argv); 
     return RUN_ALL_TESTS(); 
