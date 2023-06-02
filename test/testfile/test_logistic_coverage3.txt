@@ -2,3 +2,4 @@
 ( and ( string>? "A" "B" ) ( = 1 1 ) ) ; #f #t
 ( and ( string<? "A" "B" ) ( > 1 2 ) ) ; #t #f
 ( and ( string>? "A" "B" )( > 1 2 )  ) ;#f #f
+( exit )
