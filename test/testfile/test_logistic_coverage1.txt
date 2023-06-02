@@ -1,0 +1,5 @@
+( and #t #t )
+( and #f #f )
+( and #t #f )
+( and #f #t )
+( exit )

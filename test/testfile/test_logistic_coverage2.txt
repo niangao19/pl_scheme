@@ -1,0 +1,7 @@
+( and (boolean? '(3 . 4))  (symbol? 3) )
+( and (symbol? 'abc) (string? "Hi") )
+( and (string? -3.4) (real? 3) )
+( and (boolean? ())
+(boolean? #f) )
+( and (boolean? #f)  (symbol? 3) )
+( exit )
